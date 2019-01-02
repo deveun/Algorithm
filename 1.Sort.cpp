@@ -34,6 +34,7 @@ int main() {
 		cout<<"-- 2. Insertion Sort          --"<<endl;
 		cout<<"-- 3. Merge Sort              --"<<endl;
 		cout<<"-- 4. Quick Sort              --"<<endl;
+		cout<<"-- 0. Finish Program			 --"<<endl;
 		cout<<"--------------------------------"<<endl;
 		int method = getch();
 		switch(method-48)
@@ -50,6 +51,8 @@ int main() {
 			case 4:
 				Quicksort(arr, num);
 				break;	
+			case 0:
+				return 0;
 			default:
 				cout<<"Try Again."<<endl;
 				break;			
@@ -112,7 +115,7 @@ void Insertionsort(int arr[], int num)
 /*(Merge 함수를 재귀로 사용.)
  구간에 숫자가 2개 이상일 경우, 배열을 두개의 구간으로 나누고,
  앞구간 Merge함수, 뒷 구간 Merge함수를 재귀로.
- 나누어진 배열의 각각  시작 포인터를 x, y로 설정.
+ 나누어진 갯엑의 각각 시작 포인터를 x, y로 설정.
  tmp 배열에 각 구간에서 작은 숫자를 입력하고, x or y 포인터를 한 칸씩 이동.
  x, y가 나눈 각 구간의 마지막까지 가면 tmp배열을 다시 arr에 저장.*/
 void Mergesort(int arr[], int num)
@@ -164,16 +167,16 @@ void Merge(int arr[], int start, int end)
  x번째와 y번째 배열 값이 잘 맞게 배치되어 있으면 포인터를 이동.
  이렇게 모두 바꾸면 value 기준으로 앞은 작은 값, 뒤는 큰 값이 위치함.
  value가 있는 배열의 위치(==x==y)를 기준으로 다시 앞 배열 Partition, 뒷 배열 Partition.
- value의 앞 뒤 배열에 숫자가 1개 이하 있을 때는 정렬되어있으므로 진행하지 않음.*/
+*/
 void Quicksort(int arr[], int num)
 {
-	Partition(arr, 0, num-1, num);
+	Partition(arr, 0, num-1); 
 	
 	cout<<"Result Array: ";
 	for(int i=0; i<num; i++)
 		cout<<arr[i]<<" ";
 }
-void Partition(int arr[], int start)
+void Partition(int arr[], int start, int end)
 {
 	int pivot= (end+start)/2;
 	if(start<end)
@@ -182,7 +185,7 @@ void Partition(int arr[], int start)
 		int x=start, y=end;
 		while(x!=y)
 		{
-			if(arr[x]>=value && arr[y]<=value)
+			if(arr[x]>=value && arr[y]<=value && arr[x]!=arr[y])
 			{
 				int tmp = arr[x];
 				arr[x] = arr[y];
@@ -196,5 +199,5 @@ void Partition(int arr[], int start)
 		
 		Partition(arr, start, x-1);
 		Partition(arr, x+1, end); 
-	}
+	}	
 }
