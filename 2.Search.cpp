@@ -85,7 +85,7 @@ int Search(vector<int> v, int target, int start, int end)
 		else
 			result=mid;
 	}
-	else
+	else if (v[start]==target)
 	 return start;
 	
 	return result;
