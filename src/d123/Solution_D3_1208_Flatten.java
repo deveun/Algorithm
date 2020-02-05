@@ -1,4 +1,4 @@
-//¹è¿­, Á¤·Ä
+//ë°°ì—´ ì •ë ¬
 package d123;
 
 import java.io.BufferedReader;
@@ -22,7 +22,6 @@ public class Solution_D3_1208_Flatten {
 				arr[i] = Integer.parseInt(st.nextToken());
 			}
 
-			// ÆòÅºÈ­
 			int res = Integer.MAX_VALUE;
 			while (num-- >= 0) {
 				Arrays.sort(arr);
