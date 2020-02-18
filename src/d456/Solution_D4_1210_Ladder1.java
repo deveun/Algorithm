@@ -1,5 +1,5 @@
 // 간단시뮬
-package d123;
+package d456;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
