@@ -9,3 +9,6 @@
 ### **● Dynamic Programming**
 > -Baekjoon/1912_연속합.py   
 ---
+### **● etc**
+: String..
+> -Programmers/91301_숫자문자열과영단어.py
