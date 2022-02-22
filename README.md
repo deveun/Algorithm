@@ -13,6 +13,7 @@
 > -Baekjoon/14501_퇴사.py   
 > -Baekjoon/2638_치즈.py   
 > -Baekjoon/2544_촌수계산.py
+> -Baekjoon/9205_맥주마시면서걸어가기.py
 ---
 ### **● 최소신장트리 (MST)**
 > -Baekjoon/1922_네트워크연결.py
@@ -20,4 +21,6 @@
 ### **● etc**
 : String..
 > -Programmers/91301_숫자문자열과영단어.py   
-> 
+---
+### **● ,,,**
+: Sliding Window, Two Pointer, Binary Search
