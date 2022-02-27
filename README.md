@@ -12,13 +12,14 @@
 ### **● DFS, BFS**
 > -Baekjoon/14501_퇴사.py   
 > -Baekjoon/2638_치즈.py   
-> -Baekjoon/2544_촌수계산.py
-> -Baekjoon/9205_맥주마시면서걸어가기.py
+> -Baekjoon/2544_촌수계산.py   
+> -Baekjoon/9205_맥주마시면서걸어가기.py   
+> -Baekjoon/11725_트리의부모찾기.py
 ---
 ### **● 최소신장트리 (MST)**
 > -Baekjoon/1922_네트워크연결.py
 ---
-### **● 트리**
+### **● Tree**
 > -Programmers/42892_길찾기게임.py
 ---
 ### **● etc**
