@@ -13,14 +13,16 @@
 > -Baekjoon/14501_퇴사.py   
 > -Baekjoon/2638_치즈.py   
 > -Baekjoon/2544_촌수계산.py   
-> -Baekjoon/9205_맥주마시면서걸어가기.py   
-> -Baekjoon/11725_트리의부모찾기.py
+> -Baekjoon/9205_맥주마시면서걸어가기.py
 ---
 ### **● 최소신장트리 (MST)**
 > -Baekjoon/1922_네트워크연결.py
 ---
 ### **● Tree**
-> -Programmers/42892_길찾기게임.py
+> -Programmers/42892_길찾기게임.py   
+> -Baekjoon/11725_트리의부모찾기.py   
+> -Baekjoon/2716_원숭이매달기.py   
+> -Baekjoon/3584_가장가까운공통조상.py
 ---
 ### **● etc**
 : String..
